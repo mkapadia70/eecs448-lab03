@@ -3,21 +3,16 @@
       <title> Diary of a Wimpy Kid manipulation </title>
         <script>
             function updatePara(){
-		let redBorder = document.getElementById("redBorder").value;
-		let greenBorder = document.getElementById("greenBorder").value;
-		let blueBorder = document.getElementById("blueBorder").value;
-                let red = document.getElementById("redColor").value;
-                let blue = document.getElementById("blueColor").value;
-                let green = document.getElementById("greenColor").value;
-                let redBack = document.getElementById("redBG").value;
-                let blueBack = document.getElementById("blueBG").value;
-                let greenBack = document.getElementById("greenBG").value;
-                let width = document.getElementById("width").value;
-                document.getElementById("para").style.color = "rgb(" + red + "," + green + "," + blue + ")";
-                document.getElementById("para").style.backgroundColor = "rgb(" + redBack + "," + greenBack + "," + blueBack + ")";
-		document.getElementById("para").style.borderColor="rgb(" + redBorder + "," + greenBorder + "," + blueBorder + ")"; 
+                var redB = document.getElementById("red").value;
+                var blueB = document.getElementById("blue").value;
+                var greenB = document.getElementById("green").value;
+                var redBg = document.getElementById("redBG").value;
+                var blueBg = document.getElementById("blueBG").value;
+                var greenBg= document.getElementById("greenBG").value;
+                var width = document.getElementById("width").value;
+                document.getElementById("para").style.colorBorder = "rgb(" + redB + "," + greenB + "," + blueB + ")";
+                document.getElementById("para").style.backgroundColor = "rgb(" + redBg + "," + greenBg + "," + blueBg + ")";
                 document.getElementById("para").style.width = width;
-
             }
         </script>
         <style>
@@ -27,18 +22,25 @@ background-image:url(https://i5.walmartimages.com/asr/58375b5d-d453-459b-b81e-fc
 background-repeat: no-repeat, no-repeat;
 background-attachment: fixed, fixed;
 background-position: right top, right bottom;
-		} 
-            
-            #para{
+		}
 
-                width:1000px;
+            #para{
+              border-style: solid;
+              border-width: 10px;
+              border-color: black;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: auto;
+              margin-right: auto;
+              width:1000px;
             }
         </style>
     </head>
     <body>
 
         <div id="para">
-          RODRICK: (WHISPERING) Greg?
+
+          RODRICK: (WHISPERING) Gregack
 GREG: (GROGGILY) Mmm.
 - (IN SINGSONG) Greg?
 - What?
@@ -50,7 +52,7 @@ for an hour.
 You're about to be late for
 your first day of middle school.
 What?
-Oh, geez! How did that happen?
+Oh, geez! How did that happen?1000
 Go, go, go! Mom's about to flip out!
 She sent me to get you
 while she waits in the car!
@@ -63,19 +65,19 @@ Are you insane?
 School doesn't start till next week.
 And, FYI, school doesn't start
 at 4:00 in the morning!
-You woke up Manny.
+You woke up Manny.ack
 And if he doesn't go back down...
 Good morning!
 There is no way he is going back down.
 I just wanted to sleep till 6:00.
 - Bubby!
 - FRANK: Go to bed. I got him.
-Greg, what are you doing up
+Greg, what are you doing upid="red"
 making all this noise?
 It was Rodrick! He woke me up!
 He changed my clock!
 (SNORING)255
-- But I swear, he was just...
+- But I swear, he was just...ack
 - Go to bed.
 What is that smell? I can't even identify it.
 Bubby!
@@ -85,7 +87,7 @@ KIDS: Happy Birthday!
 Here, Bubby.
 GREG: Wow! Look at the size
 of that flamethrower!
-Okay, first of all,
+Okay, first of all,id="red"
 let me get something stright
 This is a journal, not a diary.
 Yeah, I know what it says on the cover
@@ -97,7 +99,7 @@ This just proves Mom doesn't understand0
 anything about kids my age.
 - GREG: Huh?
 - Sissy!
-The only reason I agreed to 
+The only reason I agreed to
 write in this thing is because
 when I'm rich and famous
 I'll have better things to do
@@ -118,29 +120,35 @@ He's definitely not middle school ready.
 Geronimo!
 (WHOOPS)
 He's not quite clear
-on the concept of growing up.
+on the concept of growing up.ack
 I want a puppy, a kitty,
 a gumball machine...
-But anyway, this is about me, not Rowley.
+But anyway, this is about me, not Rowley.color-border
 I always figured
 they'd make a movie about my life.
         </div>
-        <div class="color">
-            	<h3>
-			Paragraph Font Color
-		</h3>
-            	<label>
-			Red(0-255):
-		</label>
-            	<input type="text" id="redColor" placeholder="255" value="0">
+        <div class="border">
+            <h3>
+			             Paragraph Border Color
+		        </h3>
+            <label>
+			             Red(0-255):
+		        </label>
+            <input type="text" id="red" placeholder="255" value="0">
             	<label>
 			Green(0-255):
 		</label>
-            	<input type="text" id="greenColor" placeholder="255" value="0">
+            	<input type="text" id="green" placeholder="255" value="0">
             	<label>
 			Blue(0-255):
 		</label>
-            	<input type="text" id="blueColor" placeholder="255" value="0">
+            	<input type="text" id="blue" placeholder="255"
+        <div class="bgColor">
+
+              <label>
+        Width:
+        </label>
+              <input type="text" id="width" placeholder="800" value="0">
         </div>
         <div class="bgColor">
             <h3>Paragraph Background Color</h3>
@@ -152,20 +160,6 @@ they'd make a movie about my life.
             <input type="text" id="blueBG" placeholder="255" value="255">
         </div>
 
-        <div class="bgColor">
-            <h3>Paragraph width</h3>
-            <label>Width(px):</label>
-            <input type="text" id="width" value="1000">
-        </div>
-	<div class="border-color">
-		<h3>Border Color</h3>
-		<label>Red(0-255):</label>
-		<input type="text" name = "redBorder" id="redColor" placeholder="0" value="255">
-		<label>Green(0-255):</label>
-		<input type="text" name = "greenBorder" id="greenColor"placeholder="0" value="255">
-		<label>Blue(0-255):</label>
-		<input type="text" name = "blueBorder" id="blueColor" placeholder="0" value="255">	
- 	</div>
         <div>
             <button onclick="updatePara()">Update!!</button>
         </div>
