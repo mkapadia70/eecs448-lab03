@@ -3,16 +3,16 @@
       <title> Diary of a Wimpy Kid manipulation </title>
         <script>
             function updatePara(){
-                var redB = document.getElementById("red").value;
-                var blueB = document.getElementById("blue").value;
-                var greenB = document.getElementById("green").value;
+                var red = document.getElementById("red").value;
+                var blue = document.getElementById("blue").value;
+                var green = document.getElementById("green").value;
                 var redBg = document.getElementById("redBG").value;
                 var blueBg = document.getElementById("blueBG").value;
                 var greenBg= document.getElementById("greenBG").value;
                 var width = document.getElementById("width").value;
-                document.getElementById("para").style.colorBorder = "rgb(" + redB + "," + greenB + "," + blueB + ")";
+                document.getElementById("para").style.borderColor = "rgb(" + red + "," + green + "," + blue + ")";
                 document.getElementById("para").style.backgroundColor = "rgb(" + redBg + "," + greenBg + "," + blueBg + ")";
-                document.getElementById("para").style.width = width;
+                document.getElementById("para").style.borderWidth = width;
             }
         </script>
         <style>
@@ -51,7 +51,7 @@ Mom and Dad have been calling you
 for an hour.
 You're about to be late for
 your first day of middle school.
-What?
+What?25
 Oh, geez! How did that happen?1000
 Go, go, go! Mom's about to flip out!
 She sent me to get you
@@ -90,7 +90,7 @@ of that flamethrower!
 Okay, first of all,id="red"
 let me get something stright
 This is a journal, not a diary.
-Yeah, I know what it says on the cover
+Yeah, I know what it says on the cover25
 But when my mom went out
 to buy this thing,
 I specifically told her
@@ -123,30 +123,29 @@ He's not quite clear
 on the concept of growing up.ack
 I want a puppy, a kitty,
 a gumball machine...
-But anyway, this is about me, not Rowley.color-border
+But anyway, this is about me, not Rowley.color-bordercolorBorder
 I always figured
 they'd make a movie about my life.
         </div>
         <div class="border">
-            <h3>
-			             Paragraph Border Color
-		        </h3>
-            <label>
-			             Red(0-255):
-		        </label>
-            <input type="text" id="red" placeholder="255" value="0">
-            	<label>
-			Green(0-255):
-		</label>
-            	<input type="text" id="green" placeholder="255" value="0">
-            	<label>
-			Blue(0-255):
-		</label>
-            	<input type="text" id="blue" placeholder="255"
+          <h3>
+			     Paragraph Border Color
+		       </h3>
+          <label>
+			     Red(0-255):
+		       </label>
+        <input type="text" id="red" placeholder="255" value="0">
+        <label>
+			  Green(0-255):
+		    </label>
+        <input type="text" id="green" placeholder="255" value="0">
+        <label>
+			  Blue(0-255):
+		    </label>
+        <input type="text" id="blue" placeholder="255"
         <div class="bgColor">
-
-              <label>
-        Width:
+        <label>
+        Border Width:
         </label>
               <input type="text" id="width" placeholder="800" value="0">
         </div>
