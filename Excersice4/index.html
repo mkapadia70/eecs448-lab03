@@ -1,0 +1,173 @@
+<html>
+    <head>
+      <title> Diary of a Wimpy Kid manipulation </title>
+        <script>
+            function updatePara(){
+		let redBorder = document.getElementById("redBorder").value;
+		let greenBorder = document.getElementById("greenBorder").value;
+		let blueBorder = document.getElementById("blueBorder").value;
+                let red = document.getElementById("redColor").value;
+                let blue = document.getElementById("blueColor").value;
+                let green = document.getElementById("greenColor").value;
+                let redBack = document.getElementById("redBG").value;
+                let blueBack = document.getElementById("blueBG").value;
+                let greenBack = document.getElementById("greenBG").value;
+                let width = document.getElementById("width").value;
+                document.getElementById("para").style.color = "rgb(" + red + "," + green + "," + blue + ")";
+                document.getElementById("para").style.backgroundColor = "rgb(" + redBack + "," + greenBack + "," + blueBack + ")";
+		document.getElementById("para").style.borderColor="rgb(" + redBorder + "," + greenBorder + "," + blueBorder + ")"; 
+                document.getElementById("para").style.width = width;
+
+            }
+        </script>
+        <style>
+            body
+		{
+background-image:url(https://i5.walmartimages.com/asr/58375b5d-d453-459b-b81e-fcd31ae5ec0d_1.625d3f6cdde99feb163d58bd77c1ae1a.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF), url(https://images-na.ssl-images-amazon.com/images/I/81WRC-JVMAL._SY445_.jpg);
+background-repeat: no-repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: right top, right bottom;
+		} 
+            
+            #para{
+
+                width:1000px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="para">
+          RODRICK: (WHISPERING) Greg?
+GREG: (GROGGILY) Mmm.
+- (IN SINGSONG) Greg?
+- What?
+- Greg!
+- Huh? What?
+What are you doing? Get up!
+Mom and Dad have been calling you
+for an hour.
+You're about to be late for
+your first day of middle school.
+What?
+Oh, geez! How did that happen?
+Go, go, go! Mom's about to flip out!
+She sent me to get you
+while she waits in the car!
+(EXCLAIMS)
+What are you doing? What's going on?
+Getting ready for...
+(HOOTING)
+...school.
+Are you insane?
+School doesn't start till next week.
+And, FYI, school doesn't start
+at 4:00 in the morning!
+You woke up Manny.
+And if he doesn't go back down...
+Good morning!
+There is no way he is going back down.
+I just wanted to sleep till 6:00.
+- Bubby!
+- FRANK: Go to bed. I got him.
+Greg, what are you doing up
+making all this noise?
+It was Rodrick! He woke me up!
+He changed my clock!
+(SNORING)255
+- But I swear, he was just...
+- Go to bed.
+What is that smell? I can't even identify it.
+Bubby!
+(GRUNTS)
+(GIGGLING)
+KIDS: Happy Birthday!
+Here, Bubby.
+GREG: Wow! Look at the size
+of that flamethrower!
+Okay, first of all,
+let me get something stright
+This is a journal, not a diary.
+Yeah, I know what it says on the cover
+But when my mom went out
+to buy this thing,
+I specifically told her
+not to buy one that said "diary" on it.
+This just proves Mom doesn't understand0
+anything about kids my age.
+- GREG: Huh?
+- Sissy!
+The only reason I agreed to 
+write in this thing is because
+when I'm rich and famous
+I'll have better things to do
+than answer people's stupid questions
+all day long.
+Gregory, tell us about your childhood!
+Were you always so smart and handsome?
+Here's my journal. Now, shoo, shoo.
+SUSAN: That's our boy up there.
+Why did I ever say no to him?
+Mom got me this thing
+so I could write down my feelings
+about starting middle school.
+But I'm gonna be fine.
+It's my best friend, Rowley Jefferson,
+I'm worried about.255
+He's definitely not middle school ready.
+Geronimo!
+(WHOOPS)
+He's not quite clear
+on the concept of growing up.
+I want a puppy, a kitty,
+a gumball machine...
+But anyway, this is about me, not Rowley.
+I always figured
+they'd make a movie about my life.
+        </div>
+        <div class="color">
+            	<h3>
+			Paragraph Font Color
+		</h3>
+            	<label>
+			Red(0-255):
+		</label>
+            	<input type="text" id="redColor" placeholder="255" value="0">
+            	<label>
+			Green(0-255):
+		</label>
+            	<input type="text" id="greenColor" placeholder="255" value="0">
+            	<label>
+			Blue(0-255):
+		</label>
+            	<input type="text" id="blueColor" placeholder="255" value="0">
+        </div>
+        <div class="bgColor">
+            <h3>Paragraph Background Color</h3>
+            <label>Red(0-255):</label>
+            <input type="text" id="redBG" placeholder="255" value="255">
+            <label>Green(0-255):</label>
+            <input type="text" id="greenBG" placeholder="255" value="255">
+            <label>Blue(0-255):</label>
+            <input type="text" id="blueBG" placeholder="255" value="255">
+        </div>
+
+        <div class="bgColor">
+            <h3>Paragraph width</h3>
+            <label>Width(px):</label>
+            <input type="text" id="width" value="1000">
+        </div>
+	<div class="border-color">
+		<h3>Border Color</h3>
+		<label>Red(0-255):</label>
+		<input type="text" name = "redBorder" id="redColor" placeholder="0" value="255">
+		<label>Green(0-255):</label>
+		<input type="text" name = "greenBorder" id="greenColor"placeholder="0" value="255">
+		<label>Blue(0-255):</label>
+		<input type="text" name = "blueBorder" id="blueColor" placeholder="0" value="255">	
+ 	</div>
+        <div>
+            <button onclick="updatePara()">Update!!</button>
+        </div>
+    </body>
+</html>
